@@ -113,3 +113,22 @@ if(reverseWord===str){
 }
 let checkPalindrome = palindrome("madam");
 console.log(checkPalindrome);
+
+
+function printNumber(number) {
+  for(let i =1; i <= number; i++) {
+  //  console.log(i);
+      if (i % 2 ==0 && i % 3 ==0) {
+        console.log(i +" Fizz Buzz")
+      }
+        else if (i % 2 == 0) {
+        console.log(i+" Fizz");
+      } else if (i % 3 == 0) {
+        console.log(i + " Buzz");
+      } else{
+        console.log (i);
+      }
+  }
+}
+let printNum = printNumber(20);
+console.log(printNum);
